@@ -28,7 +28,7 @@ async def on_message(message):
         user = message.author
         if discord.utils.get(user.roles, name="👑 𝙎 𝙚 𝙡 𝙡 𝙚 𝙧"):
             await message.delete()
-            embed = discord.Embed(description="**계좌번호 : k뱅크 100 154 161775\n```입금후 꼭 티켓방에 입금자명 적어주세요\n입금후 입금사진을 보내주시면 감사하겠습니다!```**".format(message.author.mention), color=0x00f7ff)
+            embed = discord.Embed(description="**계좌번호 : 뱅크 100 154 161775\n```입금후 꼭 티켓방에 입금자명 적어주세요\n입금후 입금사진을 보내주시면 감사하겠습니다!```**".format(message.author.mention), color=0x00f7ff)
             await message.channel.send (embed=embed)
         else:
             await message.delete()
@@ -75,7 +75,7 @@ async def on_message(message):
         author = message.guild.get_member(message.mentions[0].id)
         if discord.utils.get(user.roles, name="👑 𝙎 𝙚 𝙡 𝙡 𝙚 𝙧"):
             await message.delete()
-            role = discord.utils.get(message.guild.roles, name="BUYER")
+            role = discord.utils.get(message.guild.roles, name="💰 𝘽 𝙐 𝙔 𝙀 𝙍")
             await message.mentions[0].add_roles(role)
             embed = discord.Embed(title="결제 확인 완료 Payment confirmation completed", description="**태그 해드리면 609서버 화산 N 으로 와주세요.\n티켓에 인게임 닉 레벨 부탁드립니다\n\nIf I tag you please come to e609 Volcanic N\nSEND ME YOUR IG NAME AND LV**", clolor=0x00f7ff)
 #            embed = discord.Embed(title="구매자 역할 지급", description="**역할지급이 정상적으로 처리 되었습니다.\n 담당자 : " + str(mention) + "\n 구매자 지급 유저 : <@" + str(message.mentions[0].id) + "> \n\n저희샵 에서 구매주셔서 감사합니다!:heart_eyes:**", clolor=0x00f7ff)
