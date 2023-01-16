@@ -28,7 +28,7 @@ async def on_message(message):
         user = message.author
         if discord.utils.get(user.roles, name="👑 𝙎 𝙚 𝙡 𝙡 𝙚 𝙧"):
             await message.delete()
-            embed = discord.Embed(description="**계좌번호 : 뱅크 100 154 161775\n```입금후 꼭 티켓방에 입금자명 적어주세요\n입금후 입금사진을 보내주시면 감사하겠습니다!```**".format(message.author.mention), color=0x00f7ff)
+            embed = discord.Embed(description="**계좌번호 : k뱅크 100 154 161775\n```입금후 꼭 티켓방에 입금자명 적어주세요\n입금후 입금사진을 보내주시면 감사하겠습니다!```**".format(message.author.mention), color=0x00f7ff)
             await message.channel.send (embed=embed)
         else:
             await message.delete()
